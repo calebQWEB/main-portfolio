@@ -1,0 +1,140 @@
+.linkto-container {
+    padding: 3rem 9rem;
+}
+
+.linkto-section {
+    margin-top: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--dark-primary);
+    box-shadow: 4px 4px 14px 0 black;
+    
+}
+
+.line {
+    height: 25rem;
+    width: 2px;
+    background-color: var(--headers);
+    display: block;
+}
+
+.workLink, .resumeLink {
+    width: 31.2rem;
+}
+
+.link-article {
+    text-align: start;
+    padding: 3rem;
+}
+
+.link-article h1 {
+    color: var(--secondary);
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.link-article p {
+    font-size: 1.25rem;
+    color: var(--text-background);
+    font-weight: 500;
+    margin-bottom: 5rem;
+
+}
+
+.link-article button {
+    width: 8rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px solid var(--headers);
+    padding: 0.5rem 1rem;
+
+    color: var(--link-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1070px) {
+    .linkto-section {
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+
+    .workLink, .resumeLink {
+        width: 100%;
+    }
+
+    .line {
+        width: 100%;
+        height: 2px;
+    }
+
+    .link-article h1 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .link-article p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .linkto-container {
+        padding: 5rem;
+    }   
+}
+
+@media screen and (max-width: 750px) {
+    .linkto-container {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .linkto-section {
+        margin-top: 5rem;
+    }
+
+    .link-article {
+        padding: 2rem;
+    }
+
+    .link-article h1 {
+        font-size: 1rem;
+    }
+
+    .link-article p {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .link-article button {
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .arrow {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .linkto-container {
+        padding: 3rem 2rem;
+    }
+}

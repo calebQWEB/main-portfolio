@@ -1,0 +1,64 @@
+.work-component {
+    padding-bottom: 5rem;
+    border: 2px solid var(--primary);
+    border-radius: 0 0 20px 20px;
+}
+
+.work-component h1{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--dark-primary);
+}
+
+.work-component a {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 620px) {
+    .work-component {
+        padding-bottom: 2.5rem;
+    }
+
+    .work-component h1{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: var(--dark-primary);
+    }
+    
+    .work-component a {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .work-component {
+        padding-bottom: 2rem;
+    }
+
+    .work-component h1{
+        font-size: 1rem;
+    }
+    
+    .work-component a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .work-component {
+        padding-bottom: 2rem;
+    }
+
+    .work-component h1{
+        font-size: 0.7rem;
+    }
+    
+    .work-component a {
+        font-size: 0.5rem;
+    }
+}
+

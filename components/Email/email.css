@@ -1,0 +1,173 @@
+.email-section {
+    margin-top: 10rem;
+    text-align: center;
+    padding: 3rem 9rem;
+}
+
+.form-header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.form-para {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: var(--dark-primary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label{
+    display: block;
+}
+
+input {
+    padding: 0.5rem;
+    width: 22rem;
+    border: 1px solid var(--secondary);
+    outline: none;
+    background-color: transparent;
+    font-size: 1.125rem;
+    color: var(--secondary);
+}
+
+::placeholder {
+    color: var(--secondary);
+}
+
+textarea {
+    width: 100%;
+    min-height: 5rem;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+
+    border: 1px solid var(--link-color);
+    outline: none;
+    background-color: transparent;
+    color: var(--link-color);
+}
+
+.submit-button {
+    width: 8rem;
+    height: 3.5rem;
+    background-color: var(--dark-primary);
+    border: none;
+
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    transform: scale(1.02);
+}
+
+.submit-button:active {
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1115px) {
+    .email-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .name-email {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .email-section {
+        margin-top: 5rem;
+    }
+    
+    .form-header {
+        font-size: 1.5rem;
+    }
+
+    .form-para {
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+        width: 7rem;
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .email-section {
+        padding: 5rem;
+    } 
+}
+
+@media screen and (max-width: 750px) {
+    .email-section {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .name-email {
+        flex-direction: column;
+    }
+
+    input {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .email-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    input {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    input {
+        width: 18rem;
+    }
+
+    .form-para {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    input {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,31 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --headers: rgb(73, 187, 202);
+  --text-background: rgb(182, 182, 182);
+  --app-background: rgba(30, 30, 30, 90%);
+  --link-color: rgb(219, 219, 219);
+  --primary: rgb(0, 128, 128);
+  --dark-primary: rgb(0, 70, 70);
+  --secondary: rgb(230, 230, 250);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-primary);
+  border-radius: 5px;
+}

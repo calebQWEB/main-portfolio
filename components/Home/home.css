@@ -1,0 +1,173 @@
+
+.mainContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9rem;
+    margin-top: 3rem;
+
+    min-height: 100vh;
+}
+
+.hello {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: var(--text-background);
+}
+
+.what-i-am {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-background);
+}
+
+.job-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.frontend , .developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontend p, .developer p {
+    font-size: 5.5rem;
+    font-weight: 900;
+    
+    color: var(--dark-primary);
+}
+
+.location {
+    font-size: 1.25rem;
+    color: var(--dark-primary);
+    font-weight: 500;
+}
+
+.welcome {
+    font-size: 1rem;
+    color: var(--link-color);
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .job-title {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .mainContainer {
+        padding: 5rem;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        min-height: none;
+    }
+
+    .hello {
+        font-size: 2.125rem;
+    }
+
+    .what-i-am {
+        font-size: 1.5rem;
+    }
+
+    .frontend p, .developer p {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainContainer {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mainContainer {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainContainer {
+        margin: 0;
+    }
+
+    .frontend p, .developer p {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    
+    .location {
+        font-size: 1rem;
+    }
+    
+    .welcome {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainContainer {
+        gap: 1rem;
+    }
+
+    .hello {
+        font-size: 1.5rem;
+    }
+
+    .what-i-am {
+        font-size: 1rem;
+    }
+
+    .frontend p, .developer p {
+        font-size: 2.5rem;
+    }
+    
+    .location {
+        font-size: 1rem;
+    }
+    
+    .welcome {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .frontend p, .developer p {
+        font-size: 2.3rem;
+    }
+
+    .location {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .welcome {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}

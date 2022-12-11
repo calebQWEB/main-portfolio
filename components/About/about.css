@@ -1,0 +1,241 @@
+.main-about-container {
+    background-color: var(--secondary);
+    padding: 3rem 9rem;
+}
+
+.about {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.about-article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-article p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--primary);
+    width: 40ch;
+}
+
+.inner-article {
+    color: var(--dark-primary);
+    font-weight: 700;
+}
+
+.skills-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.skills-container {
+    text-align: start;
+    margin-top: 3rem;
+}
+
+.skills-container h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0.5rem;
+}
+
+.skills div {
+    background-color: var(--primary);
+    box-shadow: 8px 4px 8px 0px rgb(19, 19, 19);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+
+    color: var(--link-color);
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.html {
+    color: rgb(221, 84, 30);
+}
+
+.sass {
+    color: violet;
+}
+
+.css {
+    color: rgb(73, 187, 202);
+}
+
+.python {
+    color: rgb(255, 255, 93);
+}
+
+.react {
+    color: rgb(73, 187, 202);
+}
+
+.bootstrap {
+    color: rgb(64, 145, 238);
+}
+
+.others {
+    margin-top: 3rem;
+}
+
+.others h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.other-skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.other-skills div {
+    background-color: var(--primary);
+    box-shadow: 8px 4px 8px 0px rgb(19, 19, 19);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    color: var(--link-color);
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .skills-section {
+        justify-content: flex-start;
+    }
+
+    .about-article p {
+        font-size: 1.0625rem;
+    }
+
+    .skills h1 {
+        font-size: 1.25rem;
+    }
+
+    .others h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .about {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main-about-container {
+        padding: 5rem;
+    }    
+}
+
+@media screen and (max-width: 850px) {
+    .about {
+        margin-top: 5rem;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(2, 10rem);
+    }
+
+    .other-skills {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        align-items: center;
+    }
+    .about-article p {
+        text-align: center;
+    }
+
+    .skills-section {
+        justify-content: center;
+    }
+
+    .skills-container {
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .other-skills {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main-about-container {
+        padding: 3rem;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .other-skills {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-article p {
+        font-size: 0.9rem;
+        width: 50ch;
+    }
+
+    .skills div, .other-skills div {
+        font-size: 0.55rem;
+    }
+
+    .skills-container h1, .others h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .about-article p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-article p {
+        font-size: 0.8rem;
+    }
+}

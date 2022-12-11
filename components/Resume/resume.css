@@ -1,0 +1,179 @@
+.resume-section {
+    padding: 12rem 9rem;
+}
+
+.resume-article {
+    background-color: var(--secondary);
+    padding: 3rem;
+}
+
+.article-header, .career-objective{
+    margin-bottom: 3rem;
+}
+
+.article-header span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+article p {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.article-header h1 {
+    font-size: 2.5rem;
+    color: var(--dark-primary);
+    margin-bottom: 3rem;
+}
+
+
+.career-objective h2, .experience h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.experience h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.experience__in {
+    padding-bottom: 1rem;
+}
+
+.experience__outside {
+    padding-top: 2rem;
+}
+
+.experience ul li {
+    padding: 1rem 0;
+}
+
+.experience h4 {
+    color: var(--primary);
+}
+
+.download {
+    padding: 1rem 2rem;
+    background-color: var(--dark-primary);
+    font-size: 1rem;
+    color: var(--secondary);
+    border: none;
+    cursor: pointer;
+
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .article-header span {
+        font-size: 1.5rem;
+    }
+    article p {
+        font-size: 1rem;
+    }
+    .article-header h1 {
+        font-size: 2.15rem;
+    }
+
+    .career-objective h2, .experience h2 {
+        font-size: 1.5rem;
+    }
+    .experience h3 {
+        font-size: 1.125rem;
+        color: var(--primary);
+    }
+
+    .experience h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .resume-section {
+        padding: 12rem 5rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .article-header span {
+        font-size: 1.25rem;
+    }
+    article p {
+        font-size: 0.9rem;
+    }
+    .article-header h1 {
+        font-size: 2rem;
+    }
+
+    .career-objective h2, .experience h2 {
+        font-size: 1.25rem;
+    }
+    .experience h3 {
+        font-size: 1rem;
+        color: var(--primary);
+    }
+
+    .experience h4 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .resume-section {
+        padding: 12rem 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resume-section {
+        padding: 12rem 2rem;
+    }
+
+    .download {
+        padding: 1rem 1.5rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .resume-section {
+        padding: 8rem 1rem;
+    }
+
+    .article-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .article-header span {
+        font-size: 1.2rem;
+    }
+    article p {
+        font-size: 0.7rem;
+    }
+    .article-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .career-objective h2, .experience h2 {
+        font-size: 1.2rem;
+    }
+    .experience h3 {
+        font-size: 0.8rem;
+    }
+
+    .experience h4 {
+        font-size: 0.8rem;
+    }
+
+    .download {
+        padding: 1rem 1.5rem;
+        font-size: 0.5rem;
+    }
+}
