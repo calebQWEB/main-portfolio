@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './email.css'
 import emailjs from 'emailjs-com'
 import { useInView } from 'react-intersection-observer'
@@ -34,8 +34,30 @@ const Email = () => {
         }
     }, [inView])
 
+    const [InputValue, setInputValue] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
+
+    const [sent, setSent] = useState(false)
+
+    const InputChange = (e) => {
+        setInputValue(prevState => {
+            return {
+                ...prevState,
+                [e.target.name]: e.target.value
+            }
+        })
+    }
+
     const sendEmail = (e) => {
         e.preventDefault();
+        setInputValue({
+            name: '',
+            email: '',
+            message: ''
+        })
 
         emailjs.sendForm('service_91m6kfz', 'template_1dkknh6', e.target, '1Hn4T0-kg_zotZSBS')
             .then((result) => {
@@ -44,28 +66,38 @@ const Email = () => {
                 console.log(error.text);
             });
 
+        setSent(true)
         e.target.reset()
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSent(false)
+        }, 5000)
+    }, [])
+
     return (
         <div className='email-section' ref={ref}>
             <h1 className='form-header'>Send a message</h1>
             <p className='form-para'>Business proposals, questions and stuff</p>
             <motion.form onSubmit={sendEmail} animate={animation}>
+                {
+                    sent && (
+                        <motion.span className='sent' initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1, repeat: 0 } }}>SENT</motion.span>
+                    )
+                }
                 <div className='name-email'>
                     <div>
-                        <label></label>
-                        <input type="text" name='Name' placeholder='Name' />
+                        <input type="text" name='name' value={InputValue.name} onChange={InputChange} placeholder='Name' />
                     </div>
 
                     <div>
-                        <label></label>
-                        <input type="email" name='Email' placeholder='Email' />
+                        <input type="email" name='email' value={InputValue.email} onChange={InputChange} placeholder='Email' />
                     </div>
                 </div>
 
-                <div>
-                    <label></label>
-                    <textarea name="Message" placeholder='Enter your Message' />
+                <div className='message-section'>
+                    <textarea name="message" value={InputValue.message} onChange={InputChange} placeholder='Enter your Message' />
                 </div>
 
                 <button type='submit' className='submit-button'>SEND</button>

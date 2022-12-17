@@ -17,10 +17,26 @@
     color: var(--dark-primary);
 }
 
+.sent {
+    position: absolute;
+    font-size: 1.125rem;
+    text-align: center;
+    background-color: var(--black);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--link-color);
+
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
 }
 
 .name-email {

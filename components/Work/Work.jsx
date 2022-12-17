@@ -220,7 +220,6 @@ const Work = () => {
 
                 <div className='project__mobile-version'>
                     <h2>Landing Page</h2>
-
                     <div ref={scrollRef}>
                         <motion.div variants={scrollVariant} initial='hidden' whileInView='visible' viewPort={{ once: true, root: scrollRef }}>
                             <Workcomponent image={blogr}
@@ -250,6 +249,7 @@ const Work = () => {
                         </motion.div>
                     </div>
 
+                    <h2>Web Apps</h2>
                     <div ref={scrollRef}>
                         <motion.div variants={scrollVariant} initial='hidden' whileInView='visible' viewPort={{ once: true, root: scrollRef }}>
                             <Workcomponent image={calculator}
@@ -260,7 +260,6 @@ const Work = () => {
                         </motion.div>
                     </div>
 
-                    <h2>Web Apps</h2>
                     <div ref={scrollRef}>
                         <motion.div variants={scrollVariant} initial='hidden' whileInView='visible' viewPort={{ once: true, root: scrollRef }}>
                             <Workcomponent image={CardDetails}
@@ -308,7 +307,6 @@ const Work = () => {
                                 title='Space Travel Program'
                                 link='https://spacetravelpro.netlify.app'
                                 to='https://spacetravelpro.netlify.app' />
-
                         </motion.div>
                     </div>
                 </div>

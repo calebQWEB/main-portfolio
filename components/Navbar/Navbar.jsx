@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import './navbar.css'
 
 const Navbar = () => {
@@ -86,6 +87,12 @@ const Navbar = () => {
 
                     <Link to='/resume' style={{ textDecoration: 'none' }} onClick={navClick}><h2>RESUME</h2></Link>
                     <Link to='/work' style={{ textDecoration: 'none' }} onClick={navClick}><h2>WORK</h2></Link>
+
+                    <div className='social-site'>
+                        <a href='https://github.com/calebQWEB' target='_blank'><FaGithub className='github' /></a>
+                        <a href='https://www.linkedin.com/in/caleb-ochai-68033a234/' target='_blank'><FaLinkedin className='linkedin' /></a>
+                        <a href='https://twitter.com/KalNumbers' target='_blank'><FaTwitter className='twitter' /></a>
+                    </div>
                 </motion.div>)}
             </AnimatePresence>)}
 

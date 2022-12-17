@@ -66,7 +66,7 @@ const Linkto = () => {
                 <div className='workLink' ref={ref}>
                     <motion.article className='link-article' animate={animations}>
                         <h1>MY PROJECTS</h1>
-                        <p>Check out source codes of projects i've worked on</p>
+                        <p>Check out some of the projects i've worked on.</p>
                         <Link to='/work' style={{ textDecoration: 'none' }}><button type='button'>GO TO<FaLongArrowAltRight className='arrow' /></button></Link>
                     </motion.article>
                 </div>
@@ -74,7 +74,7 @@ const Linkto = () => {
                 <div className='resumeLink'>
                     <motion.article className='link-article' animate={animations}>
                         <h1>MY RESUME</h1>
-                        <p>Know me on a deeper level, and checkout my resume instead</p>
+                        <p>Know me on a deeper level, and checkout my resume.</p>
                         <Link to='/resume' style={{ textDecoration: 'none' }}><button type='button'>GO TO<FaLongArrowAltRight className='arrow' /></button></Link>
                     </motion.article>
                 </div>
