@@ -34,6 +34,6 @@ so when you scroll into any section, the section animates in and vice versa when
 
 Follow this [link](https://calebqweb2.netlify.app/) to check out the website
 
-![My Website](/src/assets/readme/CalebQweb%20(1).png)
+![My Website](assets/readme/calebQweb-1.png)
 
-![About section](/src/assets/readme/CalebQweb%20(2).png)
+![About section](assets/readme/calebQweb-2.png)
